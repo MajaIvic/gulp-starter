@@ -49,4 +49,4 @@ gulp.task("watch", function() {
     gulp.watch("js/*.js", gulp.series("scripts"));
   });
 
-gulp.task("default", gulp.parallel("browser-sync", "scripts"));
+gulp.task("default", gulp.parallel("browser-sync", "watch"));
